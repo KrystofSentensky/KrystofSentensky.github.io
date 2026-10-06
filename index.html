@@ -2,130 +2,89 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Fotbal</title>
-
-    <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            color: #222222;
-        }
-
-        h1 {
-            color: #c8102e;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        h2 {
-            color: #333333;
-            border-bottom: 2px solid #c8102e;
-            padding-bottom: 5px;
-        }
-
-        h3 {
-            color: #c8102e;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-
-        ul {
-            background-color: white;
-            padding: 20px 40px;
-            border-radius: 10px;
-            width: 300px;
-        }
-
-        li {
-            margin: 8px;
-        }
-
-        a {
-            color: #c8102e;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kryštof Sentenský</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Svět fotbalu</h1>
+    <!-- ÚVODNÍ OBRAZOVKA (HERO) -->
+    <header class="hero-screen">
+        <div class="hero-content">
+            <h1>    Portfolio </h1>
+             <h1>    Kryštofa Sentenského </h1>
+            <p class="hero-subtitle">Vítejte na mém osobním webu, kde uvidíš mé projekty.</p>
+            <a href="#o-mne" class="btn-start">Vstoupit na web</a>
+        </div>
+    </header>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Soccerball.svg/512px-Soccerball.svg.png"
-         alt="Fotbalový míč" width="200">
+    <!-- NAVIGAČNÍ MENU -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Kryštof Sentenský</div>
+            <ul class="nav-links">
+                <li><a href="#o-mne">O mně</a></li>
+                <li><a href="#projekty">Moje projekty</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <p>
-        Fotbal je jeden z nejpopulárnějších sportů na světě.
-        Hraje se mezi dvěma týmy, které se snaží vstřelit co nejvíce gólů.
-    </p>
+    <!-- HLAVNÍ OBSAH STRÁNKY -->
+    <main class="container">
 
-    <h2>Fotbalové kluby</h2>
+        <!-- SEKCE: O MNĚ -->
+        <section id="o-mne" class="card">
+            <h2>O mně</h2>
+            <p>Ahoj, já jsem <strong>Kryštof Sentenský</strong> 👋</p>
+            <p>Věnuji se tvorbě webových stránek v HTML a CSS. Baví mě vytvářet čisté, funkční a responzivní weby, které fungují na všech zařízeních. Mám zájem se zlepšovat a učit se nové technologie. Prozatím teprve začínám a učím se, ale chci v tom nadále pokračovat.    </p>
+        </section>
 
-    <h3>Atlético Madrid</h3>
+        <!-- SEKCE: MOJE PROJEKTY -->
+        <section id="projekty" class="card">
+            <h2>Moje projekty</h2>
+            
+            <div class="projects-grid">
 
-    <ul>
-        <li>Atlético Madrid</li>
-        <li>Španělsko</li>
-        <li>Madrid</li>
-        <li>Červenobílé dresy</li>
-        <li>Můj oblíbený klub</li>
-    </ul>
+                <!-- PROJEKT 1: Svět fotbalu -->
+                <div class="project-card">
+                    <h3>Svět fotbalu ⚽</h3>
+                    <p>Informační web o fotbalu, legendárních klubech (Atlético Madrid, Real Madrid) a fotbalových pozicích. Obsahuje responzivní menu s dropdownem.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="file:///C:/Users/senta/OneDrive%20-%20OA%20a%20SOŠL%20Opava/Github/Web-projekt-1/index.html" class="btn" target="_blank">Zobrazit projekt</a>
+                </div>
 
-    <h3>Real Madrid</h3>
+                <!-- PROJEKT 2: Připraven pro další projekt -->
+                <div class="project-card">
+                    <h3>Druhý projekt 🚀</h3>
+                    <p>Na tomto projektu budeme pracovat za chvíli. Zde bude jeho popis a ukázka toho, co umí.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#" class="btn btn-disabled">Již brzy</a>
+                </div>
 
-    <ul>
-        <li>Real Madrid</li>
-        <li>Španělsko</li>
-        <li>Madrid</li>
-        <li>Bílé dresy</li>
-        <li>Velký rival Atlética Madrid</li>
-    </ul>
+            </div>
+        </section>
 
-    <h2>Oblíbené fotbalové pozice</h2>
+        <!-- SEKCE: KONTAKT -->
+        <section id="kontakt" class="card">
+            <h2>Kontakt</h2>
+            <p>Máš zájem o spolupráci nebo dotaz? Napiš mi na email!</p>
+            <p class="contact-email"><strong>Email:</strong> sentensky.krystof@gmail.com</p>
+        </section>
 
-    <ul>
-        <li>Brankář</li>
-        <li>Obránce</li>
-        <li>Záložník</li>
-        <li>Útočník</li>
-    </ul>
+    </main>
 
-    <h2>Zajímavé odkazy</h2>
-
-    <ul>
-        <li>
-            <a href="https://www.atleticodemadrid.com">
-                Oficiální web Atlético Madrid
-            </a>
-        </li>
-
-        <li>
-            <a href="https://www.realmadrid.com">
-                Oficiální web Real Madrid
-            </a>
-        </li>
-
-        <li>
-            <a href="https://cs.wikipedia.org/wiki/Fotbal">
-                Fotbal na české Wikipedii
-            </a>
-        </li>
-    </ul>
+    <!-- PATIČKA -->
+    <footer>
+        <p>&copy; 2026 Kryštof Sentenský. Všechna práva vyhrazena.</p>
+    </footer>
 
 </body>
 </html>
